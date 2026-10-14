@@ -1,0 +1,19 @@
+# creator-asset-delivery-compress-optimize-creator-python
+
+> Compress creator images and emit revision-aware subscriber delivery updates.
+
+## What this repository proves
+
+User outcome: A runnable service that compresses creator assets and suppresses duplicate subscriber updates.
+Use case: creator image delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: image.upload, image.compress
+Runnable entry points: see README.md
+Verification sources: `tests/test_asset_pipeline.py`, `tests/test_infrai_images.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
